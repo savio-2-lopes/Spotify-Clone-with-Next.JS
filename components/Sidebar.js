@@ -33,22 +33,22 @@ function Sidebar() {
         {/*  */}
 
         <button className="flex items-center space-x-2 hover:text-white">
-          <PlusCircleIcon class="h-5 w-5" />
+          <PlusCircleIcon className="h-5 w-5" />
           <p>Create Playlists</p>
         </button>
 
         <button className="flex items-center space-x-2 hover:text-white">
-          <HeartIcon class="h-5 w-5" />
+          <HeartIcon className="h-5 w-5" />
           <p>Liked Songs</p>
         </button>
 
         <button className="flex items-center space-x-2 hover:text-white">
-          <RssIcon class="h-5 w-5" />
+          <RssIcon className="h-5 w-5" />
           <p>Your episodes</p>
         </button>
 
         <button className="flex items-center space-x-2 hover:text-white">
-          <PlusCircleIcon class="h-5 w-5" />
+          <PlusCircleIcon className="h-5 w-5" />
           <p>Create Playlists</p>
         </button>
 
