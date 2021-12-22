@@ -1,24 +1,24 @@
-import React from "react";
-import { getProviders, signIn } from "next-auth/react";
+import { getProviders } from "next-auth/react";
 
 function Login({ providers }) {
   return (
     <div className="flex flex-col items-center bg-black min-h-screen w-full justify-center">
-      <img src="https://" alt="Logo Spotify" className="w-52 mb-5" />
-      {Object.values(providers).map((provider) => {
+      <img
+        src="https://links.papareact.com/9xl"
+        className="w-52 mb-5"
+        alt="Logo"
+      />
+
+      {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
-            onClick={() =>
-              signIn(provider.id, {
-                callbackUrl: "/",
-              })
-            }
-            className="bg-#18D860 text-white p-5 rounded-full"
+            className="bg-[#18D860] text-white p-5 rounded-full"
+            onClick={() => signIn(provider.id, { callbackUrl: "/" })}
           >
-            Login with {provider.name}
+            Login with
           </button>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 }
