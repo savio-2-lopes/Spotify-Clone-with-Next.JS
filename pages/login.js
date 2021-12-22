@@ -1,4 +1,4 @@
-import { getProviders } from "next-auth/react";
+import { getProviders, signIn } from "next-auth/react";
 
 function Login({ providers }) {
   return (
@@ -15,7 +15,7 @@ function Login({ providers }) {
             className="bg-[#18D860] text-white p-5 rounded-full"
             onClick={() => signIn(provider.id, { callbackUrl: "/" })}
           >
-            Login with
+            Login with {provider.name}
           </button>
         </div>
       ))}
