@@ -12,11 +12,12 @@ function Sidebar() {
   const { data: session, status } = useSession();
 
   return (
-    <div className="text-gray-500 p-5 text-sm border-r border-gray-900">
+    <div className="text-gray-500 p-5 text-sm border-r border-gray-900 h-screen">
+      {/* <div className="text-gray-500 p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen"> */}
       <div className="space-y-4">
         <button
-          onClick={() => signOut()}
           className="flex items-center space-x-2 hover:text-white"
+          onClick={() => signOut()}
         >
           Logout
         </button>
