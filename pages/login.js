@@ -8,7 +8,7 @@ function Login({ providers }) {
         className="w-52 mb-5"
         alt="Logo"
       />
-      
+
       {/* Image from: https://www.iconfinder.com/icons/1298766/spotify_music_sound_icon */}
 
       {Object.values(providers).map((provider) => (
