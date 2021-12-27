@@ -1,7 +1,8 @@
 import { useRecoilState } from "recoil";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
-import useSpotify from "../hooks/useSpotify";
 import { millisToMinutesAndSeconds } from "../lib/time";
+
+import useSpotify from "../hooks/useSpotify";
 
 function Song({ order, track }) {
   const spotifyApi = useSpotify();
@@ -12,7 +13,7 @@ function Song({ order, track }) {
   const playSong = () => {
     setCurrentTrackId(track.track.id);
     setIsPlaying(true);
-    spotifyApi.play({
+    spotifyApi({
       uris: [track.track.uri],
     });
   };
