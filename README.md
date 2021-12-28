@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="cloneSpotify" title="cloneSpotify" src=".github/01.gif" width="700px" />
+    <img alt="cloneSpotify" title="cloneSpotify" src=".github/01.gif" width="900px" />
 </h3>
 
 <p align="center"> 🎶 <strong>Clone Spotify with Next.JS and Tailwind.CSS</strong> </p>
