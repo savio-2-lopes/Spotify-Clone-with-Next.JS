@@ -23,7 +23,7 @@
 
 ## 💻 Sobre o projeto
 
-🎵 Clone da plataforma Spotify, desenvolvido utilizando Next.JS e Tailwind.CSS.
+🎵 Clone da plataforma Spotify, desenvolvido utilizando Next.JS, Tailwind.CSS e a API do Spotify, para obter as playlists do usuário logado.
 
 Baseado nas lives do canal youtube [Sonny Sangha](https://www.youtube.com/c/SonnySangha/).
 
