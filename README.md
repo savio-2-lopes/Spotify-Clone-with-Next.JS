@@ -93,7 +93,7 @@ $ npm dev
 
 ## :zap: Deploy
 
-Para acessar o deploy hospedado no Vercel, segue o [link](/)
+Para acessar o deploy hospedado no Vercel, segue o [link](https://spotify-clone-is44yik8i-savio-2-lopes.vercel.app)
 
 <br>
 
