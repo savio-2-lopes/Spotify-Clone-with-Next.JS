@@ -48,7 +48,7 @@ Baseado nas lives do canal youtube [Sonny Sangha](https://www.youtube.com/c/Sonn
 ## 🎨 Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="cloneSpotify" title="#clone-spotify" src=".github/01.gif" width="700px">
+  <img alt="cloneSpotify" title="#clone-spotify" src=".github/01.gif" width="900px">
 </p>
 
 <br>
