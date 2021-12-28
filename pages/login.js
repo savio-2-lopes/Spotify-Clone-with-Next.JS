@@ -14,10 +14,10 @@ function Login({ providers }) {
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
-            className="bg-[#18D860] text-white p-5 rounded-full"
+            className="bg-[#10bc4c] hover:bg-[#00cb54] text-black p-5 rounded-full"
             onClick={() => signIn(provider.id, { callbackUrl: "/" })}
           >
-            Login with {provider.name}
+            <p className="font-sans">Login with {provider.name}</p>
           </button>
         </div>
       ))}

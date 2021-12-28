@@ -34,7 +34,7 @@ function Player() {
   const fetchCurrentSong = () => {
     if (!songInfo) {
       spotifyApi.getMyCurrentPlayingTrack().then((data) => {
-        console.log("Now playing: ", data.body?.item);
+        console.log("Tocando agora: ", data.body?.item);
         setCurrentIdTrack(data.body?.item?.id);
 
         spotifyApi.getMyCurrentPlaybackState().then((data) => {
@@ -82,7 +82,7 @@ function Player() {
       <div className="flex items-center space-x-4">
         <img
           className="hidden md:inline h-10 w-10"
-          src={songInfo?.album.images?.[0]?.url}
+          src={songInfo?.album.images[0]?.url}
           alt="Playlist miniplay"
         />
         <div>

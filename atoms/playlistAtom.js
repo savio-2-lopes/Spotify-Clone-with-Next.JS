@@ -7,5 +7,5 @@ export const playlistState = atom({
 
 export const playlistIdState = atom({
   key: "playlistIdState",
-  default: null,
+  default: "7w33zSxzXN5blasm8mk6cc",
 });
