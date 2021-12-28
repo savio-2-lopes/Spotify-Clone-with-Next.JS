@@ -101,7 +101,7 @@ Para acessar o deploy hospedado no Vercel, segue o [link](/)
 
 ## :memo: Licença
 
-Todos os direitos de logo são da [Spotify](https://www.spotify.com/br/).
+Todos os direitos de logotipo e imagens são da [Spotify](https://www.spotify.com/br/).
 Este projeto está sob a licença do MIT. Veja a [página de licença](https://opensource.org/licenses/MIT) para mais detalhes.
 
 <br>
