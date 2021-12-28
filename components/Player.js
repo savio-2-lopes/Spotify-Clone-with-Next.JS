@@ -1,7 +1,7 @@
 import {
   HeartIcon,
   VolumeUpIcon as VolumeDownIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/solid";
 
 import {
   FastForwardIcon,
@@ -11,7 +11,7 @@ import {
   RewindIcon,
   SwitchHorizontalIcon,
   VolumeUpIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/solid";
 import { debounce } from "lodash";
 
 import { useSession } from "next-auth/react";
@@ -38,7 +38,7 @@ function Player() {
         setCurrentIdTrack(data.body?.item?.id);
 
         spotifyApi.getMyCurrentPlaybackState().then((data) => {
-          setIsPlaying(data.body?.isPlaying);
+          setIsPlaying(data.body?.is_playing);
         });
       });
     }
@@ -46,7 +46,7 @@ function Player() {
 
   const handlePlayPause = () => {
     spotifyApi.getMyCurrentPlaybackState().then((data) => {
-      if (data.body.isPlaying) {
+      if (data.body.is_playing) {
         spotifyApi.pause();
         setIsPlaying(false);
       } else {
@@ -93,13 +93,19 @@ function Player() {
       {/* Center */}
       <div className="flex items-center justify-evenly">
         <SwitchHorizontalIcon className="button" />
-        <RewindIcon className="button" />
+        <RewindIcon
+          onClick={() => spotifyApi.skipToPrevious()}
+          className="button"
+        />
         {isPlaying ? (
           <PauseIcon onClick={handlePlayPause} className="button w-10 h-10" />
         ) : (
           <PlayIcon onClick={handlePlayPause} className="button w-10 h-10" />
         )}
-        <FastForwardIcon className="button" />
+        <FastForwardIcon
+          onClick={() => spotifyApi.skipToNext()}
+          className="button"
+        />
         <ReplyIcon className="button" />
       </div>
       {/* Right */}
